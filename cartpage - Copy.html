@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .cart {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-total {
+            text-align: right;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <div class="cart-header">
+            <div>Item</div>
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Total</div>
+        </div>
+        <div class="cart-item">
+            <div>Product 1</div>
+            <div>$10.00</div>
+            <div>2</div>
+            <div>$20.00</div>
+        </div>
+        <div class="cart-item">
+            <div>Product 2</div>
+            <div>$15.00</div>
+            <div>1</div>
+            <div>$15.00</div>
+        </div>
+        <div class="cart-item">
+            <div>Product 3</div>
+            <div>$5.00</div>
+            <div>3</div>
+            <div>$15.00</div>
+        </div>
+        <div class="cart-total">
+            <strong>Total: $50.00</strong>
+        </div>
+    </div>
+</body>
+</html>
+
